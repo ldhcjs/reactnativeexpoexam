@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tonylee415.reactnativeexpoexam"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "be216627-827d-456f-bc2f-343962bf4d46"
+      }
+    },
+    "owner": "tonylee415"
   }
 }
