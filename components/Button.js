@@ -6,22 +6,22 @@ export default function Button({ label, theme }) {
         return (
             <View
                 style={[
-                    (styles.buttonContainer,
+                    styles.buttonContainer,
                     {
-                        borderWidth: 2,
+                        borderWidth: 4,
                         borderColor: "#ffd33d",
-                        borderRadius: 2,
-                    }),
+                        borderRadius: 18,
+                    },
                 ]}
             >
                 <Pressable
                     style={[styles.button, { backgroundColor: "#fff" }]}
-                    onPress={() => alert("You press a button.")}
+                    onPress={() => alert("You pressed a button.")}
                 >
                     <FontAwesome
                         name="picture-o"
                         size={18}
-                        color={"#25292e"}
+                        color="#25292e"
                         style={styles.buttonIcon}
                     />
                     <Text style={[styles.buttonLabel, { color: "#25292e" }]}>
@@ -48,15 +48,15 @@ const styles = StyleSheet.create({
     buttonContainer: {
         width: 320,
         height: 68,
-        marginHorizontal: 10,
+        marginHorizontal: 20,
         alignItems: "center",
         justifyContent: "center",
         padding: 3,
     },
     button: {
-        borderRadius: 2,
+        borderRadius: 10,
         width: "100%",
-        height: "50%",
+        height: "100%",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row",
